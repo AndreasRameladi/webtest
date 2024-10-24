@@ -1,0 +1,84 @@
+/* Reset styling dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya dasar untuk navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    
+}
+
+/* Styling untuk logo */
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+/* Styling untuk navigasi link */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+/* Gaya setiap item navigasi */
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* Gaya untuk tautan */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Hover effect pada tautan */
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* Responsif: navbar akan berubah menjadi kolom saat layar kecil */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+/* footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    
+  } */
+body{
+    background-color: #fbff00;
+}
+section{
+    background-color: lightgrey;
+    width:fit-content;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
